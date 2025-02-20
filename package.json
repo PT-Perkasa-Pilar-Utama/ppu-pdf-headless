@@ -1,0 +1,47 @@
+{
+  "name": "ppu-pdf-headless",
+  "version": "0.0.1",
+  "description": "Easily extract text from digital PDF files with coordinate and font size included, and optionally group text by lines.",
+  "keywords": [
+    "pdf-reader",
+    "text-extraction",
+    "pdf-rag",
+    "bbox",
+    "pdf",
+    "pdf-typescript",
+    "bun",
+    "pdf-digital",
+    "pdfjs"
+  ],
+  "author": "snowfluke",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "task": "bun scripts/task.ts",
+    "build:test": "bun task build && bun test",
+    "build:publish": "bun task build && bun task report-size && bun task publish",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "latest",
+    "@types/bun": "latest",
+    "@types/pdfjs-dist": "^2.10.378",
+    "@types/uglify-js": "latest",
+    "eslint": "latest",
+    "eslint-plugin-jsdoc": "latest",
+    "mitata": "latest",
+    "pdfjs-dist": "^4.10.38",
+    "tsx": "latest",
+    "typescript": "latest",
+    "typescript-eslint": "latest",
+    "uglify-js": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PT-Perkasa-Pilar-Utama/ppu-pdf-headless.git"
+  },
+  "dependencies": {}
+}
